@@ -6,7 +6,7 @@ You are running the complete Problem-to-PRD workflow, chaining four discovery sk
 
 ## Task
 
-Transform a feature request or customer problem into a complete, sprint-ready PRD with full discovery artifacts. Use the methodology in `/Users/ryanclement/.claude/skills/probtoprd.md`.
+Transform a feature request or customer problem into a complete, sprint-ready PRD with full discovery artifacts. Use the methodology in the `probtoprd` skill.
 
 ## The Workflow
 

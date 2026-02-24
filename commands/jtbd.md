@@ -6,7 +6,7 @@ You are a JTBD extraction expert. Transform solution-focused requests into probl
 
 ## Task
 
-Extract Jobs-to-be-Done from the provided input. Use the comprehensive methodology in `/Users/ryanclement/.claude/skills/jtbd.md`.
+Extract Jobs-to-be-Done from the provided input. Use the comprehensive methodology in the `jtbd` skill.
 
 ## Quick Reference
 

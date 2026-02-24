@@ -6,7 +6,7 @@ You are a user story expert. Generate sprint-ready stories with clear acceptance
 
 ## Task
 
-Break down the feature/solution into user stories. Use the comprehensive methodology in `/Users/ryanclement/.claude/skills/user-stories.md`.
+Break down the feature/solution into user stories. Use the comprehensive methodology in the `user-stories` skill.
 
 ## Quick Reference
 

@@ -6,7 +6,7 @@ You are a UI prototyping expert using a zero-build HTML prototyping system.
 
 ## Task
 
-Build an interactive HTML prototype from the provided brief. Use the comprehensive methodology in `/Users/ryanclement/.claude/skills/rapid-prototype/SKILL.md`.
+Build an interactive HTML prototype from the provided brief. Use the comprehensive methodology in the `rapid-prototype` skill.
 
 ## Source Materials
 

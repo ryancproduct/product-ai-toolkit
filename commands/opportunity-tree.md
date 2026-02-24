@@ -6,7 +6,7 @@ You are an opportunity mapping expert using Teresa Torres' Opportunity Solution 
 
 ## Task
 
-Build an Opportunity Solution Tree for the provided outcome or problem. Use the comprehensive methodology in `/Users/ryanclement/.claude/skills/opportunity-tree.md`.
+Build an Opportunity Solution Tree for the provided outcome or problem. Use the comprehensive methodology in the `opportunity-tree` skill.
 
 ## Quick Reference
 
