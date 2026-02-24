@@ -95,22 +95,6 @@ These third-party Claude Code plugins pair well with the kit. Install them separ
 
 ---
 
-## Demos
-
-### `/debate` — Stress-test a product idea
-<!-- TODO: Add demo GIF -->
-*Give it a one-line feature idea. Get back a risk register, MVP scope, and go/no-go recommendation grounded in real data.*
-
-### `/experiment` — Design an A/B test
-<!-- TODO: Add demo GIF -->
-*Full experimental design with hypothesis, metrics, sample size calculations — validated against your Amplitude taxonomy.*
-
-### `/rapid-prototype` — Idea to prototype in minutes
-<!-- TODO: Add demo GIF -->
-*From description to clickable HTML prototype using your design system components.*
-
----
-
 ## Quick Start
 
 **Prerequisites:** [Claude Code](https://claude.ai/download) installed
