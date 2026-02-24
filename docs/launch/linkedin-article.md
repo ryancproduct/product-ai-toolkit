@@ -1,4 +1,8 @@
 
+Let's start by saying, I'm not a writer :) But I've been putting together some work for our internal PM team around how I use AI, and that got me thinking, why not share it more broadly? I hope it helps you, or another PM you work with, get kickstarted with the superpower that is AI.
+
+Let's get into it!
+
 
 You're probably copy-pasting feature specs into ChatGPT/Claude/Gemini. Maybe you're using it to polish your PRDs or draft user stories. Perhaps you've even made a custom GPT here or there with your company's product principles.
 
@@ -35,7 +39,7 @@ This shift - from prompting to tooling - is what makes AI genuinely useful for p
 
 ## What this looks like in practice
 
-I built a bit of a AI operating system for product management on top of Claude Code. It's called the AI PM Kit (real original), and it's a collection of commands, skills, and specialist agents that handle real PM workflows end-to-end.
+I built a bit of an AI operating system for product management on top of Claude Code. It's called the AI PM Kit (real original), and it's a collection of commands, skills, and specialist agents that handle real PM workflows end-to-end.
 
 Here are four examples of what changes when you give AI the right context and tools.
 
@@ -45,7 +49,7 @@ I typed: `/debate "Add a bulk actions feature for managers"`
 
 What came back wasn't a generic pros-and-cons list. It was a structured debate between two specialist agents. One playing Champion, the other Sceptic. The Champion made the case with evidence from our Amplitude data on power user behaviour. The Sceptic raised feasibility concerns grounded in our actual tech stack and flagged edge cases I hadn't considered.
 
-The output: a risk register, a suggested MVP scope, and a go/no-go recommendation based on actual usage patterns.. Not hypotheticals.
+The output: a risk register, a suggested MVP scope, and a go/no-go recommendation based on actual usage patterns. Not hypotheticals.
 
 I didn't copy-paste any analytics data. The system pulled it directly via MCP integrations.
 
@@ -59,11 +63,11 @@ It applied our company's statistical rigour standards, power analysis, multiple 
 
 **Prototyping with `/rapid-prototype`**
 
-For this one, i went the extra mile and used the Figma MCP to review our design system and build out a working HTML file and claude.md file containing all it needed to know. This was a great step, as I simply needed to describe a feature concept in a few sentences and the system generated a clickable HTML prototype using components from our actual design system, complete with realistic data and interaction states.
+For this one, I went the extra mile and used the Figma MCP to review our design system and build out a working HTML file and claude.md file containing all it needed to know. This was a great step, as I simply needed to describe a feature concept in a few sentences and the system generated a clickable HTML prototype using components from our actual design system, complete with realistic data and interaction states.
 
 Not a static mockup. Not a generic wireframe. A functional prototype I could put in front of users within minutes, matching our established patterns and visual language.
 
-The other part i LOVE about this processes is the ability to tweak and change this WITH A CUSTOMER. During an interview you can work together and refine what are the must haves and nice to haves, live.
+The other part I LOVE about this process is the ability to tweak and change this WITH A CUSTOMER. During an interview you can work together and refine what the must-haves and nice-to-haves are, live.
 
 **Building a knowledge base with `/learn`**
 
@@ -77,7 +81,7 @@ This is the part most people miss about context engineering. It's not just about
 
 ## What's in the toolkit
 
-The above are a some  examples, but i thought i'd try share the full toolkit with you. 
+The above are some examples, but I thought I'd try share the full toolkit with you.
 
 The AI PM Kit includes:
 
@@ -93,7 +97,7 @@ It's not a chatbot. It's a system. Each command delegates to the right combinati
 
 I built this because I was frustrated with how shallow most "AI for PMs" tools felt. They're either generic productivity apps with AI bolted on, or they're so abstracted from real product work that they're not actually useful.
 
-I wanted something that understood how I  worked — the messy reality of juggling analytics, research, design, engineering constraints, multiple products and stakeholder opinions while trying to make good decisions quickly.
+I wanted something that understood how I worked — the messy reality of juggling analytics, research, design, engineering constraints, multiple products and stakeholder opinions while trying to make good decisions quickly.
 
 The entire system is open source. Every command, every agent, every skill. You can use it as-is, fork it, rip out the parts that don't fit your context, or just read through it to see one approach to context engineering.
 
