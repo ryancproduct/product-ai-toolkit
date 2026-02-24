@@ -1,0 +1,14 @@
+{
+  "model": "opus",
+  "enabledPlugins": {
+    "amplitude-analyst@sc-claude-marketplace": true,
+    "create-blitz-tickets@sc-claude-marketplace": true,
+    "feature-dev@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "go-parallel-tests@sc-claude-marketplace": true,
+    "sc-web-ui-table-master@sc-claude-marketplace": true
+  },
+  "alwaysThinkingEnabled": true
+}
