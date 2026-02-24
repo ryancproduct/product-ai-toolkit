@@ -230,7 +230,7 @@ PRs welcome. This is an open-source project built for the PM community.
 
 ## Built By
 
-**Ryan Clement** — Principal Product Manager
+**Ryan Clement** — Principal Product Manager at SafetyCulture
 
 [LinkedIn](https://linkedin.com/in/ryanclement) · [GitHub](https://github.com/ryancproduct)
 
