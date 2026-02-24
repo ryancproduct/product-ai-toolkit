@@ -6,7 +6,7 @@ I've spent the last while building something I wish existed when I started in Pr
 
 **The problem:** Most AI tools for PMs are either too generic (ChatGPT with no context about your product) or too narrow (single-purpose copilots). Nothing that actually mirrors how we work — synthesis from multiple sources, framework-driven thinking, evidence-based decisions.
 
-**What I built:** An open-source AI toolkit called AI PM Kit. It runs on Claude Code and includes 15 commands, 14+ multi-step skills, 9 specialist agents, and deep integrations with the tools we actually use (Amplitude, Jira, Figma, Slack, Confluence).
+**What I built:** An open-source AI toolkit called AI PM Kit. It runs on Claude Code and includes 15 commands, 19 skills, 5 specialist agents, and deep integrations with the tools we actually use (Amplitude, Jira, Figma, Slack, Confluence).
 
 **How it's different:**
 

@@ -2,7 +2,7 @@
 
 Hey folks — just open-sourced something I've been building with Claude Code that demonstrates some interesting patterns for agent coordination and MCP integration.
 
-**AI PM Kit** — an operating system for Product Management work. 15 commands, 14+ skills, 9 specialist agents, deep MCP integrations with Amplitude/Jira/Figma/Slack/Confluence.
+**AI PM Kit** — an operating system for Product Management work. 15 commands, 19 skills, 5 specialist agents, deep MCP integrations with Amplitude/Jira/Figma/Slack/Confluence.
 
 **Novel patterns:**
 

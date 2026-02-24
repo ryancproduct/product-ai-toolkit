@@ -86,8 +86,8 @@ The above are some examples, but I thought I'd try share the full toolkit with y
 The AI PM Kit includes:
 
 - **15 commands** for common PM tasks — experiments, competitive analysis, JTBD, user stories, PRDs, impact sizing, and more
-- **14+ multi-step skills (default and my own)** that chain together research, analysis, and synthesis with parallel agent orchestration
-- **9 specialist agents** (Market Research, Data Analysis, UX Design, Technical Architecture, etc.) that can work in parallel
+- **19 skills (default and my own)** that chain together research, analysis, and synthesis with parallel agent orchestration
+- **5 specialist agents** (Market Research, Data Analysis, UX Design, etc.) that can work in parallel
 - **Deep MCP integrations** with Amplitude, Jira, Confluence, Slack, Figma, and more
 - **Encoded frameworks** from Teresa Torres (Opportunity Solution Trees), Jobs-to-be-Done, INVEST criteria, and other established PM methodologies
 

@@ -12,7 +12,7 @@ I've been experimenting with Claude Code's agent and MCP capabilities and built 
 
 **Framework Encoding** — PM frameworks (Jobs-to-be-Done, Teresa Torres, INVEST, RICE, etc.) are implemented as structured workflows. Not just "here's a template", but actual workflow orchestration that guides the model through proper application of the methodology.
 
-**Skills as Reusable Modules** — 14+ Claude Code skills that can be composed into larger workflows, plus 15 commands for common tasks and 9 specialist agents for delegation.
+**Skills as Reusable Modules** — 19 Claude Code skills that can be composed into larger workflows, plus 15 commands for common tasks and 5 specialist agents for delegation.
 
 The kit includes commands like `/debate` (parallel stress-test of product ideas), `/experiment` (full A/B test design with Amplitude validation), `/impact-sizing` (ARR estimation with Excel output), and `/interview-analysis` (parallel analysis of customer interviews).
 

@@ -2,7 +2,7 @@
 
 **A practical AI operating system for Product Management — turning Claude Code into a PM superpower.**
 
-Built for [Claude Code](https://claude.ai/download), this kit gives you 15 slash commands, 14+ complex skills, 9 specialist agents, and 12 MCP integrations — all wired together to handle the full PM workflow from discovery to delivery.
+Built for [Claude Code](https://claude.ai/download), this kit gives you 15 slash commands, 19 skills, 5 specialist agents, and 12 MCP integrations — all wired together to handle the full PM workflow from discovery to delivery.
 
 ---
 
@@ -40,7 +40,7 @@ Product Managers spend too much time reformatting, context-switching, and reinve
 
 ### Skills — Complex Multi-Step Workflows
 
-Folder-based skills with supporting files, templates, and agent orchestration.
+Skills range from single-file methodologies to folder-based workflows with templates and agent orchestration.
 
 | Skill | What It Does |
 |-------|-------------|
@@ -48,21 +48,27 @@ Folder-based skills with supporting files, templates, and agent orchestration.
 | `/interview-analysis` | Parallel agent dispatch to analyse customer interviews using Teresa Torres Continuous Discovery framework |
 | `/impact-sizing` | Guided impact sizing with Python-driven calculations and Excel workbook output |
 | `/learn` | Deep-dive research on any topic, saves knowledge for future sessions |
+| `/recall` | Retrieve previously learned knowledge from your growing knowledge base |
+| `/probtoprd` | Full discovery chain from problem statement → JTBD extraction → PRD |
+| `/prd` | Generate comprehensive PRDs using a proven template |
+| `/jtbd` | Full Jobs-to-be-Done extraction methodology |
+| `/user-stories` | INVEST-validated story generation with BDD acceptance criteria |
+| `/opportunity-tree` | Build Opportunity Solution Trees (Teresa Torres methodology) |
+| `/prioritization` | Prioritise features using RICE, MoSCoW, Kano, ICE, or Weighted Scoring |
+| `/design-an-interface` | Generate multiple radically different interface designs ("Design It Twice" methodology) |
 | `/rapid-prototype` | Full prototyping system with design system references |
 | `/parallel-prototype` | Spawn 3 structurally different prototypes in parallel |
 | `/web-browser` | Remote-control Chrome for web interaction |
-| `xlsx` / `docx` / `pptx` / `pdf` | Document creation and manipulation |
+| `/xlsx` `/docx` `/pptx` `/pdf` | Document creation and manipulation |
 
 ### Agents — Specialists for Delegation
 
-9 custom agents you can delegate to via the Task tool.
+5 custom agents you can delegate to via the Task tool.
 
 | Agent | Speciality |
 |-------|-----------|
 | `market-research-analyst` | Competitive intelligence and market research |
 | `cpto-review` | Executive-level review of PRDs, architecture, strategy |
-| `ai-engineering-architect` | AI implementation strategy |
-| `mobile-app-architect` | iOS/Android development |
 | `ux-designer` | UX design and user experience |
 | `prototype-builder` | Rapid prototyping |
 | `data-brief-analyst` | Data analysis and briefs |
@@ -135,11 +141,11 @@ cp -rn product-ai-toolkit/agents/* ~/.claude/agents/
 │   ├── debate/
 │   ├── interview-analysis/
 │   ├── impact-sizing/
-│   └── ... (14+ total)
+│   └── ... (19 total)
 ├── agents/                → Specialist agents for delegation
 │   ├── market-research-analyst.md
 │   ├── cpto-review.md
-│   └── ... (9 total)
+│   └── ... (5 total)
 └── config/                → Example settings
 ```
 

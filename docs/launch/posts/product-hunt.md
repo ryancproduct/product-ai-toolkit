@@ -4,7 +4,7 @@
 AI operating system for Product Management
 
 **Description:**
-Open-source AI toolkit built on Claude Code with 15 commands, 14+ skills, 9 specialist agents, and deep integrations with PM tools (Amplitude, Jira, Figma, Slack, Confluence). Encodes real PM frameworks into AI workflows with parallel agent dispatch and MCP-grounded analysis.
+Open-source AI toolkit built on Claude Code with 15 commands, 19 skills, 5 specialist agents, and deep integrations with PM tools (Amplitude, Jira, Figma, Slack, Confluence). Encodes real PM frameworks into AI workflows with parallel agent dispatch and MCP-grounded analysis.
 
 **Topics:** Productivity, Artificial Intelligence, Open Source, Product Management
 
