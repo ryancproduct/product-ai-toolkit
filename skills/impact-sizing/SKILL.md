@@ -1,11 +1,11 @@
 ---
 name: impact-sizing
-description: "Guide users through SafetyCulture's impact sizing methodology to translate product hypotheses into ARR estimates with Excel workbook output"
+description: "Guide users through an impact sizing methodology to translate product hypotheses into ARR estimates with Excel workbook output"
 ---
 
 # Impact Sizing Skill
 
-**Purpose**: Guide users through SafetyCulture's impact sizing methodology to translate product hypotheses into ARR estimates, then generate a complete Excel workbook with all calculations.
+**Purpose**: Guide users through a structured impact sizing methodology to translate product hypotheses into ARR estimates, then generate a complete Excel workbook with all calculations.
 
 ## When to Use This Skill
 - When a PRD is in the PROPOSED stage
@@ -76,31 +76,31 @@ The metric should be one of the Big 5 metrics:
 - **Is this new functionality or enhancing existing?**: Determines whether to use top-down or bottom-up TAM/SAM/SOM
 
 ### 1.3 Strategic Focus
-Confirm alignment with SafetyCulture's strategic focus:
-- **Priority Industries**: Manufacturing, Retail + QSR, Transport & Logistics, Hospitality
-- **Priority Geographies**: USA, UK&I, ANZ, Canada
-- **Customer Segment**: Enterprise+ (>1,000 employees), Small & Medium (>250 employees)
+Confirm alignment with your company's strategic focus:
+- **Priority Industries**: [Your target verticals, e.g. Manufacturing, Retail, Healthcare]
+- **Priority Geographies**: [Your target regions, e.g. USA, UK, ANZ]
+- **Customer Segment**: [Your target segments, e.g. Enterprise (>1,000 employees), Mid-market]
 
 ### 1.4 Data Sources
 Ask what data the user has access to. For each source, explain how to get the data:
 
-**Salesforce - Closed Lost/Won:**
-> Export from [Global Closed Sales Report](https://safetyculture.lightning.force.com/lightning/r/Report/00OOl000005GObNMAW/view)
-> - Click "Export" → "Details Only" → CSV
+**CRM - Closed Lost/Won:**
+> Export from your CRM's closed sales report (e.g. Salesforce, HubSpot)
+> - Export as CSV with deal stage, close reason, and amount columns
 > - Or just tell me the feature-related closed lost value if you've already looked it up
 
-**Productboard - Feature Requests:**
-> Go to your feature in [Productboard](https://safetyculture.productboard.com) and note:
+**Feedback Tool - Feature Requests:**
+> Go to your feature in your feedback tool (e.g. Productboard, Canny, Intercom) and note:
 > - Number of requests for this specific feature
 > - Total requests in the product area (for calculating proportion)
 
-**Twine - Churn Risk:**
-> Search [Twine](https://app.twine.so) for keywords related to your feature
+**Customer Intelligence - Churn Risk:**
+> Search your customer intelligence tool (e.g. Twine, Gong, Chorus) for keywords related to your feature
 > - List customer names and their ARR from accounts expressing frustration
-> - Or upload the Twine report export
+> - Or upload the report export
 
 **Churned Customers:**
-> Check the [FY25 Product deep-dive](https://docs.google.com/presentation/d/1oPtHMFxzdQV_0g64xigmAkDbO8UBiNaz_1uZAi5S08s/edit) or churn spreadsheet
+> Check your churn analysis data or spreadsheet
 > - Find customers who churned citing this capability
 > - List their names and ARR values
 
@@ -217,8 +217,8 @@ Use internal data sources:
 
 ### 3.1 Churned Customers
 Search for customers who churned specifically due to this capability missing:
-- **Data Source**: [FY25 Product deep-dive spreadsheet](https://docs.google.com/presentation/d/1oPtHMFxzdQV_0g64xigmAkDbO8UBiNaz_1uZAi5S08s/edit)
-- **Data Source**: [Global Q3 Churn/CL Renewals Report](Salesforce)
+- **Data Source**: Your product churn analysis spreadsheet
+- **Data Source**: Your CRM churn/renewal reports
 - Look for keywords related to the feature in churn reasons
 - Sum the ARR of churned accounts
 
@@ -231,20 +231,20 @@ Identify customers at risk of churning if capability isn't delivered:
 ### 3.3 Retention Uplift
 Calculate expected year-on-year churn reduction:
 ```
-Retention Uplift = (Churned Customers ARR / Total FY25 Churn) × FY26 GDR Target
+Retention Uplift = (Churned Customers ARR / Total Prior Year Churn) × GDR Uplift Target
 ```
-- FY25 Total Company Churn: ~$19.6M
-- FY26 GDR uplift target: 2% reduction
+- Prior Year Total Company Churn: [Your churn figure]
+- GDR Uplift Target: [Your target, e.g. 2% reduction]
 
 ---
 
 ## Phase 4: Opportunities Analysis
 
 ### 4.1 Closed Won Opportunity (from Closed Lost data)
-- **Data Source**: [Global Closed Sales Report](Salesforce - last 2 fiscal years)
+- **Data Source**: Your CRM closed sales report (last 2 fiscal years)
 - Filter: Stage = "Closed Lost", Reason = Product-related
 - Search Additional Details for feature-related keywords
-- Calculate: Feature-related Closed Lost / Total Closed Deals × FY26 Bookings Target ($63M)
+- Calculate: Feature-related Closed Lost / Total Closed Deals × Next Year Bookings Target
 
 ### 4.2 Current Opportunities
 - Any pipeline opportunities specifically dependent on this feature
@@ -280,33 +280,32 @@ Table of all data sources used with links and access dates.
 
 ---
 
-## Key Reference Data (SafetyCulture FY26)
+## Key Reference Data (Customise for Your Company)
 
 | Metric | Value | Source |
 |--------|-------|--------|
-| ARR Target FY26 | $250M AUD | SafetyCulture Strategy |
-| Net Add Target FY26 | $50M | SafetyCulture Strategy |
-| New Bookings Target FY26 | $63M | SafetyCulture Strategy |
-| Closed Won Rate | 23% | Global Closed Sales Report |
-| Average Deal Cycle | 89 days | Global Closed Sales Report |
-| Average Seat Price (Standard) | $24/month ($288/year) | Pricing |
-| Average Seat Price (Enterprise blend) | $367/year | All Customers Report |
-| FY25 Total Company Churn | $19.6M | FY25 Product deep-dive |
-| FY26 GDR Uplift Target | 2% reduction | SafetyCulture Strategy |
-| 100M Users Target | By 2032 | SafetyCulture Strategy |
+| ARR Target | [Your ARR target] | Company Strategy |
+| Net Add Target | [Your net add target] | Company Strategy |
+| New Bookings Target | [Your bookings target] | Company Strategy |
+| Closed Won Rate | [Your win rate, e.g. 23%] | CRM Report |
+| Average Deal Cycle | [Your deal cycle, e.g. 89 days] | CRM Report |
+| Average Seat Price (Standard) | [Your pricing] | Pricing |
+| Average Seat Price (Enterprise blend) | [Your enterprise pricing] | Customers Report |
+| Prior Year Total Company Churn | [Your churn figure] | Churn Analysis |
+| GDR Uplift Target | [Your target, e.g. 2% reduction] | Company Strategy |
 
 ---
 
-## Key Resource Links
+## Key Resource Links (Customise for Your Company)
 
 | Description | Link |
 |-------------|------|
-| Average seat sizes by industry | [Google Slides](https://docs.google.com/presentation/d/1hoVbrNbzF2t2AB6lOQyvXvyqM6DUHnC3YA3euhtUQwA/edit?slide=id.g34871649d76_0_159) |
-| Global Closed Sales Report | [Salesforce Report](https://safetyculture.lightning.force.com/lightning/r/Report/00OOl000005GObNMAW/view) |
-| All Customers Report | [Tableau](https://prod-useastb.online.tableau.com/#/site/safetyculture/views/AllCustomersReport/SCOrganisationDetails) |
-| FY25 Product Churn Deep-dive | [Google Slides](https://docs.google.com/presentation/d/1oPtHMFxzdQV_0g64xigmAkDbO8UBiNaz_1uZAi5S08s/edit) |
-| Global Q3 Churn/CL Renewals | [Salesforce Report](Salesforce) |
-| Industry Playbooks | Internal Google Drive |
+| Average seat sizes by segment | [Your internal resource] |
+| Closed Sales Report | [Your CRM report URL] |
+| All Customers Report | [Your BI dashboard URL] |
+| Churn Deep-dive | [Your churn analysis URL] |
+| Churn/Renewal Reports | [Your CRM report URL] |
+| Industry/Segment Playbooks | [Your internal docs] |
 
 ---
 

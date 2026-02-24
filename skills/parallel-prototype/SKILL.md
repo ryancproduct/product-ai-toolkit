@@ -93,11 +93,11 @@ Spawn 3 parallel agents using the Task tool. Each agent gets:
 
 **Agent prompt template:**
 ```
-You are building a SafetyCulture HTML prototype. Your constraint: [CONSTRAINT].
+You are building an HTML prototype. Your constraint: [CONSTRAINT].
 
 Read these files first:
-- /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/blank_prototype_template.html
-- /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/DesignSystem.html
+- [YOUR_PROTOTYPE_TEMPLATES_PATH]/blank_prototype_template.html
+- [YOUR_PROTOTYPE_TEMPLATES_PATH]/DesignSystem.html
 
 Design brief: [BRIEF]
 [If Figma context exists: Current design context: [FIGMA_CONTEXT]]
@@ -106,7 +106,7 @@ Your constraint is: [CONSTRAINT_NAME] — [CONSTRAINT_DESCRIPTION]
 
 Rules:
 - Follow the constraint strictly — it should fundamentally shape your layout and interaction model
-- Use SafetyCulture design system components from DesignSystem.html
+- Use design system components from DesignSystem.html
 - Vanilla JavaScript only, all JS in single <script> block at end of body
 - All interactive elements need focus-ring class
 - File name: parallel_[a|b|c]_[brief_slug].html

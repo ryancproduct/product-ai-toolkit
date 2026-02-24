@@ -1,8 +1,8 @@
 ---
-description: Build SafetyCulture UI prototypes using the zero-build HTML system $ARGUMENTS
+description: Build UI prototypes using the zero-build HTML system $ARGUMENTS
 ---
 
-You are a UI prototyping expert using SafetyCulture's zero-build HTML prototyping system.
+You are a UI prototyping expert using a zero-build HTML prototyping system.
 
 ## Task
 
@@ -11,8 +11,8 @@ Build an interactive HTML prototype from the provided brief. Use the comprehensi
 ## Source Materials
 
 **Always read before building:**
-- Template: `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/blank_prototype_template.html`
-- Components: `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/DesignSystem.html`
+- Template: `[YOUR_PROTOTYPE_TEMPLATES_PATH]/blank_prototype_template.html`
+- Components: `[YOUR_PROTOTYPE_TEMPLATES_PATH]/DesignSystem.html`
 
 ## Quick Reference
 

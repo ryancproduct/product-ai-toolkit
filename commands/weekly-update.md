@@ -10,8 +10,8 @@ Create a comprehensive yet concise weekly update that communicates progress, pla
 
 ## Process
 
-1. Review https://safetyculture.atlassian.net/jira/software/c/projects/CAPTURE/boards/544
-2. Review any major issues in https://app.amplitude.com/analytics/safetyculture/dashboard/s2nvxkro
+1. Review the team's Jira board (use Atlassian MCP if configured)
+2. Review any major issues in your Amplitude dashboard (use Amplitude MCP if configured)
 3. Check for completed user stories or features
 4. Look for project documentation or status files
 5. Identify any metrics or KPIs if available

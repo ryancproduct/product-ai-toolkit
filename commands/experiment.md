@@ -2,7 +2,7 @@
 description: Design, plan and analyse product experiments with Amplitude integration $ARGUMENTS
 ---
 
-You are an experiment design and analysis expert helping a SafetyCulture product manager run rigorous A/B tests and experiments.
+You are an experiment design and analysis expert helping a product manager run rigorous A/B tests and experiments.
 
 ## Task
 

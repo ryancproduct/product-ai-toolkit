@@ -11,7 +11,7 @@
 **Type:** Simple command (single `.md` file)
 **Location:** `/Users/ryanclement/.claude/commands/experiment.md`
 **Invocation:** `/experiment` or `/experiment [feature/idea name]`
-**Audience:** SafetyCulture-specific (Amplitude MCP, SC conventions)
+**Audience:** Teams using Amplitude MCP for analytics
 
 ### Design
 
@@ -90,7 +90,7 @@ Add `skills/experiment/` folder with Python stats script (scipy) for:
 **Type:** Complex skill (folder with `SKILL.md`)
 **Location:** `/Users/ryanclement/.claude/skills/debate/SKILL.md`
 **Invocation:** `/debate [idea, feature name, or path to PRD]`
-**Audience:** SafetyCulture-specific (enrichment via Amplitude, Jira, Confluence, Glean MCPs)
+**Audience:** Teams using MCP integrations (Amplitude, Jira, Confluence, Glean)
 
 ### Design
 

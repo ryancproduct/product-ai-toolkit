@@ -1,11 +1,11 @@
 ---
 name: prd
-description: "Generate a SafetyCulture PRD using the standard template $ARGUMENTS"
+description: "Generate a PRD using the standard template $ARGUMENTS"
 ---
 
-# SafetyCulture PRD Generator
+# PRD Generator
 
-Generate comprehensive Product Requirements Documents using SafetyCulture's standard template. This skill creates PRDs with full problem alignment, solution details, and launch readiness checklists.
+Generate comprehensive Product Requirements Documents using a proven template. This skill creates PRDs with full problem alignment, solution details, and launch readiness checklists.
 
 ## Invocation
 
@@ -229,7 +229,7 @@ mcp__atlassian__createConfluencePage
 "Reduce template creation time by 50% through AI-powered field suggestions"
 
 **Migration:**
-"Migrate existing Sheqsy users to Lone Worker platform with zero data loss"
+"Migrate existing users from legacy platform to unified experience with zero data loss"
 
 **Technical:**
 "Implement canonical template IDs to enable cross-organization sharing"

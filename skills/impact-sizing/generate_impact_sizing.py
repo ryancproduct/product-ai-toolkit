@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Impact Sizing Excel Generator
-Generates a comprehensive impact sizing workbook based on SafetyCulture's methodology
+Generates a comprehensive impact sizing workbook for translating product hypotheses into ARR estimates.
 """
 
 from openpyxl import Workbook
@@ -573,16 +573,16 @@ def create_impact_sizing_workbook(data: dict, output_path: str) -> str:
         sources_sheet.cell(row=3, column=col).fill = section_fill
         sources_sheet.cell(row=3, column=col).font = Font(bold=True, color="FFFFFF")
 
-    # Standard SafetyCulture resources
+    # Standard data sources — customise these URLs for your company
     standard_sources = [
-        ('Average seat sizes by industry', 'https://docs.google.com/presentation/d/1hoVbrNbzF2t2AB6lOQyvXvyqM6DUHnC3YA3euhtUQwA/edit', '', 'RESTRICTED'),
-        ('Global Closed Sales Report', 'Salesforce Report', '', 'Win rate: 23%, Avg cycle: 89 days'),
-        ('All Customers Report', 'https://prod-useastb.online.tableau.com/#/site/safetyculture/views/AllCustomersReport', '', 'Tableau dashboard'),
-        ('FY25 Product Churn Deep-dive', 'https://docs.google.com/presentation/d/1oPtHMFxzdQV_0g64xigmAkDbO8UBiNaz_1uZAi5S08s/edit', '', 'RESTRICTED'),
-        ('Industry Playbooks', 'Internal Google Drive', '', ''),
-        ('Productboard Feature Requests', 'https://safetyculture.productboard.com', '', ''),
-        ('Twine Customer Insights', 'https://app.twine.so', '', ''),
-        ('#account-risks Slack Channel', 'Slack', '', ''),
+        ('Average seat sizes by segment', '[Your internal resource URL]', '', 'Add your URL'),
+        ('Closed Sales Report', '[Your CRM report URL]', '', 'E.g. Salesforce, HubSpot'),
+        ('All Customers Report', '[Your BI dashboard URL]', '', 'E.g. Tableau, Looker'),
+        ('Product Churn Deep-dive', '[Your churn analysis URL]', '', 'Add your URL'),
+        ('Industry/Segment Playbooks', '[Your internal docs]', '', ''),
+        ('Feature Requests', '[Your feedback tool URL]', '', 'E.g. Productboard, Canny'),
+        ('Customer Insights', '[Your customer intel tool URL]', '', 'E.g. Twine, Gong'),
+        ('Account Risks Channel', '[Your Slack/Teams channel]', '', ''),
     ]
 
     row = 4
@@ -629,9 +629,9 @@ def create_impact_sizing_workbook(data: dict, output_path: str) -> str:
         ('Enterprise Seat Price (Annual)', '$367', 'Blended rate from All Customers Report', 'High'),
         ('Win Rate', '23%', 'From Global Closed Sales Report', 'High'),
         ('Average Deal Cycle', '89 days', 'From Global Closed Sales Report', 'High'),
-        ('FY26 New Bookings Target', '$63M', 'SafetyCulture Strategy', 'High'),
-        ('FY25 Total Churn', '$19.6M', 'FY25 Product deep-dive', 'High'),
-        ('FY26 GDR Uplift Target', '2%', 'SafetyCulture Strategy', 'High'),
+        ('New Bookings Target', '[Your target]', 'Company Strategy', 'High'),
+        ('Prior Year Total Churn', '[Your figure]', 'Churn Analysis', 'High'),
+        ('GDR Uplift Target', '[Your target]', 'Company Strategy', 'High'),
     ]
 
     row = 4

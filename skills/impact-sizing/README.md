@@ -1,6 +1,6 @@
 # Impact Sizing Skill for Claude
 
-A custom skill that guides you through SafetyCulture's impact sizing methodology and generates comprehensive Excel workbooks.
+A custom skill that guides you through a structured impact sizing methodology and generates comprehensive Excel workbooks.
 
 ## What This Skill Does
 
@@ -102,10 +102,10 @@ Claude: No problem - I'll mark churn as "Unknown" with low confidence and
 
 | Data Type | Source | How to Export |
 |-----------|--------|---------------|
-| Closed Lost deals | [Global Closed Sales Report](https://safetyculture.lightning.force.com/lightning/r/Report/00OOl000005GObNMAW/view) | Export → Details Only → CSV |
-| Feature requests | [Productboard](https://safetyculture.productboard.com) | Note the counts from Insights |
-| Churn risk | [Twine](https://app.twine.so) | Search keywords, note accounts |
-| Churned customers | [FY25 deep-dive](https://docs.google.com/presentation/d/1oPtHMFxzdQV_0g64xigmAkDbO8UBiNaz_1uZAi5S08s/edit) | Copy relevant rows |
+| Closed Lost deals | Your CRM closed sales report | Export → Details Only → CSV |
+| Feature requests | Your feedback tool (e.g. Productboard) | Note the counts from Insights |
+| Churn risk | Your customer intelligence tool (e.g. Twine, Gong) | Search keywords, note accounts |
+| Churned customers | Your churn analysis spreadsheet | Copy relevant rows |
 | Pipeline | GTM team | Ask your Sales partners |
 
 ## Files Included
@@ -127,18 +127,18 @@ The skill generates workbooks with these sheets:
 5. **Data_Sources** - All sources and links used
 6. **Assumptions** - Key assumptions with rationale and confidence levels
 
-## Key SafetyCulture Reference Data (FY26)
+## Example Reference Data (Customise for Your Company)
 
-| Metric | Value |
-|--------|-------|
-| ARR Target | $250M AUD |
+| Metric | Example Value |
+|--------|---------------|
+| ARR Target | $250M |
 | Net Add Target | $50M |
 | New Bookings Target | $63M |
 | Closed Won Rate | 23% |
 | Average Deal Cycle | 89 days |
 | Standard Seat Price | $24/month ($288/year) |
 | Enterprise Seat Price | $367/year (blended) |
-| FY25 Total Churn | $19.6M |
+| Prior Year Total Churn | $19.6M |
 | GDR Uplift Target | 2% reduction |
 
 ## Contributing
@@ -152,5 +152,5 @@ To improve this skill:
 ## Support
 
 For questions about the impact sizing methodology, refer to:
-- [Impact Sizing Playbook](https://www.notion.so/From-Hypothesis-to-ARR-The-Impact-Sizing-Playbook) (internal)
+- Your internal impact sizing playbook or methodology docs
 - Your Product Analytics or Data team

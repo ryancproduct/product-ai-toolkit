@@ -1,8 +1,9 @@
 # Global Instructions
 
+<!-- Customise this section for your context -->
 ## About Me
 
-- Principal Product Manager at SafetyCulture
+- [Your role] at [Your company]
 - I mostly prototype — speed and iteration over production polish
 - I use Claude as a thinking partner, sounding board, and force multiplier
 

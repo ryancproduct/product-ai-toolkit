@@ -78,7 +78,7 @@ I will run through all 4 phases, providing checkpoints after each. At each check
 1. **JTBD Analysis** - Jobs and opportunity scores
 2. **Opportunity Tree** - Solutions and experiments
 3. **User Stories** - Sprint-ready with acceptance criteria
-4. **PRD** - Complete SafetyCulture-format PRD
+4. **PRD** - Complete PRD using the standard template
 5. **Traceability Matrix** - Connecting all artifacts
 
 If no input provided, ask: "What feature request, customer problem, or feedback would you like me to take through the full discovery-to-PRD workflow?"

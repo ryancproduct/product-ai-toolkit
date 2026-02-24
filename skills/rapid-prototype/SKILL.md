@@ -1,15 +1,15 @@
 ---
 name: rapid-prototype
-description: "Build SafetyCulture UI prototypes using the zero-build HTML system $ARGUMENTS"
+description: "Build UI prototypes using the zero-build HTML system $ARGUMENTS"
 ---
 
-# SafetyCulture Rapid Prototype Skill
+# Rapid Prototype Skill
 
 ## Overview
 
-Build interactive UI prototypes in seconds using SafetyCulture's zero-build HTML prototyping system. No npm, no webpack, no waiting. Edit → Save → Refresh = 2 seconds.
+Build interactive UI prototypes in seconds using a zero-build HTML prototyping system. No npm, no webpack, no waiting. Edit → Save → Refresh = 2 seconds.
 
-**Source Kit Location:** `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/`
+**Source Kit Location:** `[YOUR_PROTOTYPE_TEMPLATES_PATH]/`
 
 ## When to Use This Skill
 
@@ -47,8 +47,8 @@ Extract from the user's brief:
 ### Step 2: Read Source Materials
 
 ```
-Read: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/blank_prototype_template.html
-Read: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/DesignSystem.html
+Read: [YOUR_PROTOTYPE_TEMPLATES_PATH]/blank_prototype_template.html
+Read: [YOUR_PROTOTYPE_TEMPLATES_PATH]/DesignSystem.html
 ```
 
 ### Step 3: Assemble Prototype
@@ -82,9 +82,9 @@ For complex prototypes (4+ sections, 10+ components, multiple interactions):
 ### Agent 1: Layout Architect
 **Prompt:**
 ```
-You are building a SafetyCulture prototype. Your job: CREATE THE PAGE STRUCTURE.
+You are building a prototype. Your job: CREATE THE PAGE STRUCTURE.
 
-Read: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/blank_prototype_template.html
+Read: [YOUR_PROTOTYPE_TEMPLATES_PATH]/blank_prototype_template.html
 
 Task: Build the HTML skeleton for [DESCRIBE LAYOUT]
 - Keep the full <head> section with Tailwind config
@@ -100,9 +100,9 @@ Output: The complete HTML file with placeholder sections.
 ### Agent 2: Component Extractor
 **Prompt:**
 ```
-You are extracting components from SafetyCulture's design system.
+You are extracting components from the design system.
 
-Read: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/DesignSystem.html
+Read: [YOUR_PROTOTYPE_TEMPLATES_PATH]/DesignSystem.html
 
 Task: Extract and adapt these components: [LIST COMPONENTS]
 
@@ -118,9 +118,9 @@ Output: A markdown document with each component's adapted HTML, ready to paste.
 ### Agent 3: Interaction Engineer
 **Prompt:**
 ```
-You are adding JavaScript interactivity to a SafetyCulture prototype.
+You are adding JavaScript interactivity to a prototype.
 
-Reference patterns from: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/CLAUDE.md
+Reference patterns from: [YOUR_PROTOTYPE_TEMPLATES_PATH]/CLAUDE.md
 
 Task: Write vanilla JavaScript for: [LIST INTERACTIONS]
 - Tabs switching
@@ -140,9 +140,9 @@ Output: Complete <script> block ready to paste.
 ### Agent 4: Accessibility Validator
 **Prompt:**
 ```
-You are validating accessibility for a SafetyCulture prototype.
+You are validating accessibility for a prototype.
 
-Reference: /Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/CLAUDE.md (Accessibility section)
+Reference: [YOUR_PROTOTYPE_TEMPLATES_PATH]/CLAUDE.md (Accessibility section)
 
 Task: Review this HTML and provide fixes:
 [PASTE ASSEMBLED HTML]

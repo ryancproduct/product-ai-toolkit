@@ -1,6 +1,6 @@
 # Prototype Builder Agent
 
-Use this agent when building SafetyCulture UI prototypes from PRDs, briefs, or Figma designs. This agent specializes in assembling complete, interactive HTML prototypes using the zero-build prototyping system.
+Use this agent when building UI prototypes from PRDs, briefs, or Figma designs. This agent specialises in assembling complete, interactive HTML prototypes using the zero-build prototyping system.
 
 ## Agent Capabilities
 
@@ -14,9 +14,9 @@ Use this agent when building SafetyCulture UI prototypes from PRDs, briefs, or F
 ## Source Materials
 
 **Always read these before building:**
-- Template: `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/blank_prototype_template.html`
-- Components: `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/DesignSystem.html`
-- Guidelines: `/Users/ryanclement/Desktop/AI_space/Rapid Prototype Starter pack/CLAUDE.md`
+- Template: `[YOUR_PROTOTYPE_TEMPLATES_PATH]/blank_prototype_template.html`
+- Components: `[YOUR_PROTOTYPE_TEMPLATES_PATH]/DesignSystem.html`
+- Guidelines: `[YOUR_PROTOTYPE_TEMPLATES_PATH]/CLAUDE.md`
 
 ## Workflow
 
