@@ -82,6 +82,17 @@ Pre-configured connections to your PM stack:
 | **Meetings** | Granola (MCP) |
 | **Calendar** | Google Calendar |
 
+### Recommended Plugins
+
+These third-party Claude Code plugins pair well with the kit. Install them separately — they're not included in this repo.
+
+| Plugin | What It Does | Install |
+|--------|-------------|---------|
+| **Superpowers** | Brainstorming → design doc → implementation plan → subagent execution. The full idea-to-code workflow with structured checkpoints. | `claude plugins install superpowers from claude-plugins-official` |
+| **Impeccable** | Frontend design skill with 17 commands for auditing, critiquing, and polishing UI. Deep references for typography, colour, spacing, motion, and anti-patterns. Levels up `/rapid-prototype` output. | See [impeccable.style](https://impeccable.style) |
+
+> **Why Superpowers matters:** The brainstorm → plan → execute loop is how I build most features. Superpowers handles the process scaffolding (design docs, implementation plans, TDD, code review) while this kit handles the PM-specific content (frameworks, data integrations, specialist agents). They complement each other well.
+
 ---
 
 ## Demos
