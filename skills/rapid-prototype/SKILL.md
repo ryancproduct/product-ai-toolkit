@@ -208,7 +208,9 @@ Output: List of issues with corrected HTML snippets.
 
 ---
 
-## Design Tokens (Pre-Configured)
+## Design Tokens (Example — Replace With Your Own)
+
+> **Note:** The tokens below are examples to get you started. Replace them with your own design system values, or use the Figma MCP to extract tokens from your design files.
 
 ### Colors
 ```
