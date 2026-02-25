@@ -1,0 +1,12 @@
+{
+  "name": "ai-pm-kit",
+  "description": "15 PM commands, 19 skills, and 5 specialist agents — turning Claude Code into a PM superpower",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ryan Clement"
+  },
+  "homepage": "https://github.com/ryancproduct/product-ai-toolkit",
+  "repository": "https://github.com/ryancproduct/product-ai-toolkit",
+  "license": "MIT",
+  "keywords": ["product-management", "pm", "jtbd", "prd", "discovery", "prototyping"]
+}
