@@ -4,12 +4,12 @@ This shows how to dispatch multiple interview analysis agents in parallel.
 
 ## Scenario
 
-You have 15 interview files to analyze in `/Users/ryan/Desktop/Workflows/Customers`.
+You have 15 interview files to analyze in `./interviews/customers`.
 
 ## Step 1: Enumerate Files
 
 ```bash
-find /Users/ryan/Desktop/Workflows/Customers -name "*.rtf" | wc -l
+find ./interviews/customers -name "*.rtf" | wc -l
 # Output: 15
 ```
 

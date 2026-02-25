@@ -125,7 +125,7 @@ Count occurrences across all interviews for:
 ## Example Invocation
 
 ```
-/interview-analysis /Users/ryan/Desktop/Workflows/Customers --output /Users/ryan/Desktop/Workflows/Findings.md --batch-size 5
+/interview-analysis ./interviews/customers --output ./findings.md --batch-size 5
 ```
 
 ## Error Handling
