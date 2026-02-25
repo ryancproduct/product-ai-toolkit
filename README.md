@@ -216,6 +216,12 @@ When you run `/debate`, you're not writing a prompt. You're invoking a system th
 
 ---
 
+## Data Security
+
+All workflows that connect to production systems (Amplitude, Jira, Confluence, Slack) treat MCP data as confidential by default. Customer data is anonymised in outputs unless explicitly requested, financial data in impact sizing workbooks is flagged as commercially sensitive, and knowledge files warn against storing customer-specific information. No credentials or customer data are stored in the repository. See the Data Security & Privacy section in `CLAUDE.md` for full guidance.
+
+---
+
 ## Contributing
 
 PRs welcome. This is an open-source project built for the PM community.
