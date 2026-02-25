@@ -14,6 +14,15 @@ Parse arguments:
 - **--output**: Path to findings markdown file (default: `<folder>/Interview-Analysis-Findings.md`)
 - **--batch-size**: Number of interviews per parallel agent (default: 5)
 
+## Data Sensitivity
+
+Interview transcripts contain customer PII — names, roles, companies, and potentially contact details or business-sensitive information.
+
+- **Anonymise by default.** In the output findings file, replace customer names with identifiers (e.g., "Company A", "Participant 1") unless the user explicitly requests real names.
+- **Flag PII in quotes.** When extracting direct quotes, strip or redact names, email addresses, and phone numbers that appear in the transcript.
+- **Output file location matters.** The findings file persists on disk. Avoid writing to shared or synced directories (e.g., Dropbox, Google Drive) unless intended.
+- **Temporary agent files.** Parallel agents write intermediate results to `/tmp/`. These aren't automatically cleaned up — note this to the user after analysis completes.
+
 ## Execution Strategy
 
 ### 1. Discovery Phase

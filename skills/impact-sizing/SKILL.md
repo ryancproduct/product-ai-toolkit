@@ -353,6 +353,15 @@ For a feature like "Multiple Assets in Inspections", the final impact sizing cam
 7. Claude provides summary and key findings
 ```
 
+## Data Sensitivity
+
+This skill produces outputs containing **customer names, deal values, ARR figures, churn reasons, and pipeline data** — all commercially sensitive.
+
+- **Anonymise where possible.** Use company identifiers (e.g., "Account A") in the workbook unless the user needs real names for internal use.
+- **Store securely.** The Excel workbook should not be saved to shared/public directories or committed to git repositories.
+- **CRM data is confidential.** Salesforce exports, churn analysis, and pipeline data pulled during this workflow are production data — treat accordingly.
+- **Warn before sharing.** If the user asks to post results to Slack or Confluence, confirm they're comfortable with the audience seeing customer-level financial data.
+
 ## Important Notes
 
 - **Cite all data sources** - transparency is critical

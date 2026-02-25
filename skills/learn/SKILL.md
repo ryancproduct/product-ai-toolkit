@@ -72,6 +72,8 @@ Create a comprehensive knowledge artifact with this structure:
 2. Save to: `~/.claude/knowledge/[filename].md`
 3. If project-specific, also mention they can move to `.claude/knowledge/` for project scope
 
+> **Data warning:** Knowledge files persist indefinitely on disk with no encryption or automatic cleanup. Avoid storing customer names, financial figures, deal values, or confidential strategic information in knowledge files. Keep learned knowledge general — frameworks, patterns, and public information are fine; customer-specific data is not.
+
 ## After Saving
 
 1. Confirm what was learned and where it was saved
