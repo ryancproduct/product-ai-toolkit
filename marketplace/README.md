@@ -13,15 +13,8 @@ claude plugin install ai-pm-kit
 
 - **ai-pm-kit** — 15 PM commands, 19 skills, and 5 specialist agents for product management
 
-## Publishing
+## About this directory
 
-This directory is designed to be published as a separate GitHub repo at `ryancproduct/ai-pm-kit-marketplace`. To publish:
+**This directory is a scaffold, not part of the plugin itself.** It exists in the plugin repo purely as a convenience — its contents should be published as a separate GitHub repo at `ryancproduct/ai-pm-kit-marketplace`. Claude Code reads the marketplace repo to discover available plugins.
 
-```bash
-cd marketplace
-git init
-git add .
-git commit -m "Initial marketplace"
-git remote add origin https://github.com/ryancproduct/ai-pm-kit-marketplace.git
-git push -u origin main
-```
+See [PUBLISHING.md](../PUBLISHING.md) in the plugin repo for the full step-by-step publishing guide.

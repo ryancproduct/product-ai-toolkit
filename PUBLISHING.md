@@ -67,8 +67,7 @@ cat > /tmp/test-marketplace/.claude-plugin/marketplace.json << 'EOF'
         "url": "https://github.com/ryancproduct/product-ai-toolkit.git",
         "ref": "feat/plugin-conversion"
       },
-      "description": "AI PM Kit (testing from PR branch)",
-      "version": "1.0.0"
+      "description": "AI PM Kit (testing from PR branch)"
     }
   ]
 }
