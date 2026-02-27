@@ -33,10 +33,10 @@ Open Terminal and run:
 ```bash
 cd ~/dev/product-ai-toolkit
 git fetch origin
-git checkout plugin-conversion   # replace with the actual PR branch name
+git checkout feat/plugin-conversion   # replace with the actual PR branch name
 ```
 
-> **How to find the branch name:** On the GitHub PR page, look near the top — it shows something like `username wants to merge 3 commits into main from plugin-conversion`. The branch name is the part after "from".
+> **How to find the branch name:** On the GitHub PR page, look near the top — it shows something like `username wants to merge 3 commits into main from feat/plugin-conversion`. The branch name is the part after "from".
 
 ### 1b. Create a temporary test marketplace
 
@@ -65,7 +65,7 @@ cat > /tmp/test-marketplace/.claude-plugin/marketplace.json << 'EOF'
       "source": {
         "source": "url",
         "url": "https://github.com/ryancproduct/product-ai-toolkit.git",
-        "ref": "plugin-conversion"
+        "ref": "feat/plugin-conversion"
       },
       "description": "AI PM Kit (testing from PR branch)",
       "version": "1.0.0"
@@ -75,7 +75,7 @@ cat > /tmp/test-marketplace/.claude-plugin/marketplace.json << 'EOF'
 EOF
 ```
 
-> **Important:** Replace `plugin-conversion` on the `"ref"` line with the actual PR branch name if different.
+> **Important:** Replace `feat/plugin-conversion` on the `"ref"` line with the actual PR branch name if different.
 
 ### 1c. Install from the test marketplace
 
@@ -206,13 +206,12 @@ claude plugin update ai-pm-kit
 ### For version bumps (new features, new commands)
 
 1. Update the version in `.claude-plugin/plugin.json` (e.g. `"1.0.0"` → `"1.1.0"`)
-2. Update the version in `marketplace/.claude-plugin/marketplace.json` to match
-3. Merge to `main`
-4. Push the updated `marketplace.json` to the marketplace repo:
+2. Merge to `main`
+3. Update the marketplace repo to match:
 
 ```bash
-cd ~/dev/product-ai-toolkit/marketplace
-cp .claude-plugin/marketplace.json .claude-plugin/marketplace.json
+cd ~/dev/ai-pm-kit-marketplace
+# Edit .claude-plugin/marketplace.json — update the version to match plugin.json
 git add .
 git commit -m "Bump ai-pm-kit to 1.1.0"
 git push

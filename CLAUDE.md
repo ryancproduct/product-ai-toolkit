@@ -10,6 +10,7 @@ For complex multi-step work, prefer delegation to agents. For everything else, j
 1. **Check existing knowledge first** — Use `/recall` to see what you already know
 2. **Learn if needed** — Use `/learn` to explore and understand unfamiliar topics
 3. **Delegate to agents** — Use the Task tool with appropriate agents for parallel or deep work
+4. **Use skills** — If a skill might apply (even 1% chance), invoke it
 
 **Don't delegate** simple, single-step tasks, quick questions, or synthesis work.
 

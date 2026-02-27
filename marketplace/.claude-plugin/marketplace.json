@@ -11,11 +11,10 @@
     {
       "name": "ai-pm-kit",
       "source": {
-        "source": "url",
-        "url": "https://github.com/ryancproduct/product-ai-toolkit.git"
+        "source": "github",
+        "repo": "ryancproduct/product-ai-toolkit"
       },
-      "description": "15 PM commands, 19 skills, and 5 specialist agents for product management",
-      "version": "1.0.0"
+      "description": "15 PM commands, 19 skills, and 5 specialist agents for product management"
     }
   ]
 }

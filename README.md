@@ -132,15 +132,7 @@ Edit the "About Me" section with your role, company, and preferences.
 
 ### Optional: Connect your tools
 
-The kit works best with MCP integrations for your PM stack. Run `/add-mcp` in Claude Code for guided setup, or add manually:
-
-| Tool | Install command |
-|------|----------------|
-| Jira | `claude mcp add jira -- npx -y @anthropic/mcp-jira` |
-| Amplitude | `claude mcp add amplitude -- npx -y @anthropic/mcp-amplitude` |
-| Figma | `claude mcp add figma -- npx -y @anthropic/mcp-figma` |
-| Confluence | `claude mcp add confluence -- npx -y @anthropic/mcp-confluence` |
-| Slack | `claude mcp add slack -- npx -y @anthropic/mcp-slack` |
+The kit works best with MCP integrations for your PM stack. Run `/add-mcp` in Claude Code for guided setup — it will walk you through connecting Jira, Amplitude, Figma, Confluence, Slack, and other tools.
 
 ### Uninstall
 
