@@ -1,0 +1,20 @@
+{
+  "name": "ai-pm-kit-marketplace",
+  "owner": {
+    "name": "Ryan Clement"
+  },
+  "metadata": {
+    "description": "AI PM Kit — product management commands, skills, and agents for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-pm-kit",
+      "source": {
+        "source": "github",
+        "repo": "ryancproduct/product-ai-toolkit"
+      },
+      "description": "15 PM commands, 19 skills, and 5 specialist agents for product management"
+    }
+  ]
+}

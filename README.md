@@ -105,48 +105,69 @@ These third-party Claude Code plugins pair well with the kit. Install them separ
 
 **Prerequisites:** [Claude Code](https://claude.ai/download) installed
 
+### Install (2 commands)
+
 ```bash
-# Clone the kit
-git clone https://github.com/ryancproduct/product-ai-toolkit.git
-
-# Create directories if they don't exist
-mkdir -p ~/.claude/commands ~/.claude/skills ~/.claude/agents
-
-# Copy without overwriting existing files
-cp -rn product-ai-toolkit/commands/* ~/.claude/commands/
-cp -rn product-ai-toolkit/skills/* ~/.claude/skills/
-cp -rn product-ai-toolkit/agents/* ~/.claude/agents/
+claude plugin marketplace add ryancproduct/ai-pm-kit-marketplace
+claude plugin install ai-pm-kit
 ```
 
-> **Note:** The `-n` flag prevents overwriting existing files. If you already have a `CLAUDE.md`, merge manually rather than replacing — your existing instructions are valuable.
+That's it. All 15 commands, 19 skills, and 5 agents are now available.
 
-**Then customise:**
-1. Review `product-ai-toolkit/CLAUDE.md` and merge anything useful into your `~/.claude/CLAUDE.md`
-2. Configure MCP servers for your tools (run `/add-mcp` for guidance)
-3. Try `/jtbd "Users keep asking for dark mode"` — you're running
+### Verify
+
+```
+/jtbd "Users keep asking for dark mode"
+```
+
+### Optional: Personalise
+
+Copy the CLAUDE.md template into your project to customise the toolkit for your team:
+
+```bash
+curl -o CLAUDE.md https://raw.githubusercontent.com/ryancproduct/product-ai-toolkit/main/CLAUDE.md.template
+```
+
+Edit the "About Me" section with your role, company, and preferences.
+
+### Optional: Connect your tools
+
+The kit works best with MCP integrations for your PM stack. Run `/add-mcp` in Claude Code for guided setup — it will walk you through connecting Jira, Amplitude, Figma, Confluence, Slack, and other tools.
+
+### Uninstall
+
+```bash
+claude plugin uninstall ai-pm-kit
+claude plugin marketplace remove ai-pm-kit-marketplace
+```
 
 ---
 
 ## Architecture
 
 ```
-~/.claude/
-├── CLAUDE.md              → PM operating system (global instructions)
-├── commands/              → Quick slash commands (single-file skills)
+product-ai-toolkit/               ← This repo (the plugin)
+├── .claude-plugin/
+│   └── plugin.json               ← Plugin manifest
+├── CLAUDE.md                     ← Plugin instructions (loaded automatically)
+├── CLAUDE.md.template            ← Personal preferences template (copy to your project)
+├── commands/                     ← Quick slash commands (single-file workflows)
 │   ├── experiment.md
 │   ├── jtbd.md
 │   ├── competitive-analysis.md
 │   └── ... (15 total)
-├── skills/                → Complex multi-step workflows
+├── skills/                       ← Complex multi-step workflows
 │   ├── debate/
 │   ├── interview-analysis/
 │   ├── impact-sizing/
 │   └── ... (19 total)
-├── agents/                → Specialist agents for delegation
+├── agents/                       ← Specialist agents for delegation
 │   ├── market-research-analyst.md
 │   ├── cpto-review.md
 │   └── ... (5 total)
-└── config/                → Example settings
+└── marketplace/                  ← Marketplace repo scaffold (publish separately)
+    └── .claude-plugin/
+        └── marketplace.json
 ```
 
 ---
@@ -181,8 +202,8 @@ All output is markdown formatted for direct use in Confluence, Slack, or Jira. N
 
 ## Customising for Your Team
 
-**Modify global instructions:**
-Edit `~/.claude/CLAUDE.md` to change default behaviour, add team context, or encode your own frameworks.
+**Personalise your instance:**
+Copy `CLAUDE.md.template` to your project and edit the "About Me" section with your role, company, and preferences.
 
 **Add your own commands:**
 Create `~/.claude/commands/your-command.md` — it's live immediately as `/your-command`.
@@ -194,7 +215,7 @@ Create `~/.claude/agents/your-agent.md` with the agent's speciality and constrai
 Run `/add-mcp` for guided setup, or configure manually in your Claude Code settings.
 
 **Swap frameworks:**
-Each skill's framework logic lives in its markdown file. Prefer RICE over ICE? Edit the prioritisation skill. Use a different PRD template? Update `skills/prd.md`.
+Fork the plugin and edit any skill's markdown file. Prefer RICE over ICE? Edit the prioritisation skill. Use a different PRD template? Update `skills/prd.md`.
 
 ---
 
