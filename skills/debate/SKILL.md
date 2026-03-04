@@ -39,8 +39,6 @@ Attempt to pull supporting context from available MCPs. Do not block on these �
 
 **Confluence** — Use Confluence MCP tools to search for existing research, strategy docs, or prior analysis related to the idea.
 
-**Glean** — Use `mcp__glean_default__search` as a catch-all to find any organisational context about the idea.
-
 ### Assemble Context Package
 
 Combine into a single context block:
