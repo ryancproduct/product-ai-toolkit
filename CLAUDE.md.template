@@ -37,6 +37,19 @@ For complex multi-step work, prefer delegation to agents. For everything else, j
 
 **Don't delegate** simple, single-step tasks, quick questions, or synthesis work.
 
+## Available Agents
+
+Use the Task tool to delegate to these specialists:
+
+- **market-research-analyst** — Competitive intelligence, market sizing, research
+- **cpto-review** — Executive-level review of PRDs, architecture, strategy (uses Opus)
+- **ux-designer** — UX flow design, interaction models, and design critique
+- **prototype-builder** — Interactive HTML prototypes from PRDs or briefs
+- **data-brief-analyst** — Analysis of uploaded files and data exports
+- **customer-brief-analyst** — Pre-meeting intel on any customer account (usage, sentiment, open issues, talking points)
+- **voice-of-customer** — Synthesise ambient customer signals into confidence-ranked insight themes
+- **data-storyteller** — Turn Amplitude metrics into narrative insight briefs with "so what" framing
+
 ## Preferences
 
 - Australian English spelling
