@@ -1,45 +1,43 @@
 ---
-description: Generate a concise standup update
+description: Generate a concise PM standup update by pulling from Jira and recent activity
 ---
 
 You are helping a product manager prepare their daily standup update.
 
 ## Task
 
-Review recent work and create a concise standup update covering:
+Pull recent activity from available sources and generate a concise standup covering Yesterday, Today, and Blockers.
 
-1. **Yesterday**: What was accomplished
-2. **Today**: What's planned
-3. **Blockers**: Any impediments or help needed
+## Data Sources (use what's available, skip what isn't)
 
-## Process
-
-1. Check recent git commits (last 24 hours) if in a git repo
-2. Look for any TODO files, project management files, or notes
-3. Review any recently modified files that indicate work in progress
-4. Generate a concise, team-friendly update
+1. **Jira** (primary) — Search for issues updated in the last 24-48 hours assigned to or created by the user. Look for recently transitioned tickets (moved to Done, In Review, or In Progress).
+2. **Slack** — Any key decisions, updates, or async threads from yesterday that are worth surfacing.
+3. **Confluence** — Any pages created or updated recently by the user.
+4. **User input** — If no integrations are connected, ask: "What did you work on yesterday and what's on the agenda today?"
 
 ## Output Format
 
 ```
+📋 Standup — [Day, Date]
+
 Yesterday:
-- [Accomplishment 1]
-- [Accomplishment 2]
+- [Accomplishment or progress — outcome-focused, not activity-focused]
+- [e.g., "Shipped [feature] to staging — ready for QA sign-off"]
 
 Today:
-- [Plan 1]
+- [Plan 1 — specific and actionable]
 - [Plan 2]
 
 Blockers:
-- [Blocker 1 or "None"]
+- [Specific blocker with owner, or "None"]
 ```
 
 ## Style
 
-- Be concise (3-5 bullets max per section)
-- Focus on outcomes, not activities
-- Highlight cross-team dependencies
-- Flag blockers clearly
-- Use action verbs (shipped, completed, planning, reviewing)
+- 3-5 bullets max per section
+- Outcomes over activities: "closed 3 discovery interviews" not "did customer research"
+- Name the specific ticket or feature, not just the category of work
+- Blockers should name who can unblock them
+- If it was a meeting-heavy day, summarise key decisions made, not just meetings attended
 
-If you can't find enough context, ask the user to provide additional information about what they worked on or are planning.
+If the user provides additional context, incorporate it. Keep the whole thing to under 10 lines.

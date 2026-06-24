@@ -34,6 +34,9 @@ Use the Task tool to delegate to these specialists:
 - **ux-designer** — UX design and user experience
 - **prototype-builder** — Rapid prototyping
 - **data-brief-analyst** — Data analysis and briefs
+- **customer-brief-analyst** — Pre-meeting intel brief on any customer account (usage, sentiment, open issues, talking points)
+- **voice-of-customer** — Synthesise ambient customer signals into confidence-ranked insight themes for roadmap planning
+- **data-storyteller** — Turn Amplitude metrics or raw data into a narrative insight brief with "so what" framing
 
 ## Key Patterns
 

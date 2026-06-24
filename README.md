@@ -2,7 +2,7 @@
 
 **A practical AI operating system for Product Management — turning Claude Code into a PM superpower.**
 
-Built for [Claude Code](https://claude.ai/download), this kit gives you 15 slash commands, 19 skills, 5 specialist agents, and 12 MCP integrations — all wired together to handle the full PM workflow from discovery to delivery.
+Built for [Claude Code](https://claude.ai/download), this kit gives you 19 slash commands, 23 skills, 8 specialist agents, and 12 MCP integrations — all wired together to handle the full PM workflow from discovery to delivery.
 
 ---
 
@@ -18,7 +18,7 @@ Product Managers spend too much time reformatting, context-switching, and reinve
 
 ### Commands — Quick PM Workflows
 
-15 slash commands for common PM tasks. Each is a single markdown file.
+19 slash commands for common PM tasks. Each is a single markdown file.
 
 | Command | What It Does |
 |---------|-------------|
@@ -37,6 +37,10 @@ Product Managers spend too much time reformatting, context-switching, and reinve
 | `/retrospective` | Facilitate sprint retrospectives |
 | `/rapid-prototype` | Build UI prototypes using zero-build HTML system |
 | `/recall` | Retrieve previously learned knowledge |
+| `/customer-brief` | Pre-meeting intel brief on any customer account — usage, sentiment, open issues, talking points |
+| `/roadmap-narrative` | Turn a roadmap into exec, team, and customer-facing narratives |
+| `/decision-brief` | 1-page decision brief with options, trade-offs, and a clear recommendation |
+| `/sprint-health` | Mid-sprint health check — surfaces blockers, produces a copy-paste Slack update |
 
 ### Skills — Complex Multi-Step Workflows
 
@@ -60,33 +64,43 @@ Skills range from single-file methodologies to folder-based workflows with templ
 | `/parallel-prototype` | Spawn 3 structurally different prototypes in parallel |
 | `/web-browser` | Remote-control Chrome for web interaction |
 | `/xlsx` `/docx` `/pptx` `/pdf` | Document creation and manipulation |
+| `/roadmap-narrative` | Turn a rough roadmap into exec, team, and customer-facing narratives — one input, three polished outputs |
+| `/decision-brief` | Structured 1-pager for any product decision — options, trade-offs, recommendation, next step |
+| `/churn-signal` | Account health assessment — usage + sentiment signals → health score + recommended intervention |
+| `/sprint-health` | Sprint delivery check — planned vs done, blockers surfaced, copy-paste Slack update produced |
 
 ### Agents — Specialists for Delegation
 
-5 custom agents you can delegate to via the Task tool.
+8 custom agents you can delegate to via the Task tool.
 
 | Agent | Speciality |
 |-------|-----------|
 | `market-research-analyst` | Competitive intelligence and market research |
-| `cpto-review` | Executive-level review of PRDs, architecture, strategy |
+| `cpto-review` | Executive-level review of PRDs, architecture, strategy (uses Opus) |
 | `ux-designer` | UX design and user experience |
 | `prototype-builder` | Rapid prototyping |
 | `data-brief-analyst` | Data analysis and briefs |
+| `customer-brief-analyst` | Pre-meeting intel on any account — usage, sentiment, open issues, talking points |
+| `voice-of-customer` | Synthesise ambient customer signals into confidence-ranked insight themes |
+| `data-storyteller` | Turn Amplitude metrics into narrative insight briefs with "so what" framing |
 
 ### MCP Integrations
 
-Pre-configured connections to your PM stack:
+Connect these tools via **https://claude.ai/customize/connectors** — once connected, all skills and agents use them automatically.
 
 | Category | Tools |
 |----------|-------|
 | **Comms** | Slack |
-| **Development** | Jira (MCP), GitHub, Docker |
-| **Design** | Figma (MCP) |
-| **Analytics** | Amplitude (MCP) |
-| **Docs** | Confluence (MCP), Glean Search (MCP) |
-| **Research** | Twine (MCP), Product Board (MCP) |
-| **Meetings** | Granola (MCP) |
-| **Calendar** | Google Calendar |
+| **Product & Dev** | Atlassian (Jira + Confluence), GitHub |
+| **Design** | Figma |
+| **Analytics** | Amplitude |
+| **Search & Knowledge** | Glean |
+| **Customer Support** | Intercom |
+| **Research** | Twine |
+| **Email & Calendar** | Gmail, Google Calendar, Google Drive |
+| **Meetings** | Zoom |
+
+For local or self-hosted tools (databases, internal APIs), use `/add-mcp` for CLI setup instructions.
 
 ### Recommended Plugins
 
@@ -112,7 +126,7 @@ claude plugin marketplace add ryancproduct/ai-pm-kit-marketplace
 claude plugin install ai-pm-kit
 ```
 
-That's it. All 15 commands, 19 skills, and 5 agents are now available.
+That's it. All 19 commands, 23 skills, and 8 agents are now available.
 
 ### Verify
 
@@ -153,18 +167,21 @@ product-ai-toolkit/               ← This repo (the plugin)
 ├── CLAUDE.md.template            ← Personal preferences template (copy to your project)
 ├── commands/                     ← Quick slash commands (single-file workflows)
 │   ├── experiment.md
-│   ├── jtbd.md
-│   ├── competitive-analysis.md
-│   └── ... (15 total)
+│   ├── customer-brief.md
+│   ├── decision-brief.md
+│   └── ... (19 total)
 ├── skills/                       ← Complex multi-step workflows
 │   ├── debate/
-│   ├── interview-analysis/
-│   ├── impact-sizing/
-│   └── ... (19 total)
+│   ├── roadmap-narrative/
+│   ├── decision-brief/
+│   ├── churn-signal/
+│   ├── sprint-health/
+│   └── ... (23 total)
 ├── agents/                       ← Specialist agents for delegation
-│   ├── market-research-analyst.md
-│   ├── cpto-review.md
-│   └── ... (5 total)
+│   ├── customer-brief-analyst.md
+│   ├── voice-of-customer.md
+│   ├── data-storyteller.md
+│   └── ... (8 total)
 └── marketplace/                  ← Marketplace repo scaffold (publish separately)
     └── .claude-plugin/
         └── marketplace.json
@@ -234,6 +251,21 @@ The solution: encode context once, reuse forever.
 - **MCP Servers** = Live connections to your actual data
 
 When you run `/debate`, you're not writing a prompt. You're invoking a system that knows what frameworks to apply, what data to check, and what format to produce — because that context is encoded, not typed.
+
+---
+
+## Recommended Schedules
+
+Several skills are designed to run automatically as recurring remote agents. Use `/schedule` in Claude Code to set these up — they run in Anthropic's cloud infrastructure and post results to Slack, save to Confluence, or just land in your Claude Code inbox.
+
+| Schedule | Cadence | What It Does | Skills Used |
+|----------|---------|-------------|-------------|
+| **Weekly VoC digest** | Monday 8am | Synthesises last 7 days of customer signal from Intercom, Slack, and Jira into confidence-ranked insight themes | `voice-of-customer` |
+| **Sprint health check** | Wednesday 8am | Pulls active Jira sprint, flags stale/blocked tickets, compares % complete vs sprint elapsed | `sprint-health` |
+| **Weekly metrics story** | Friday 4pm | Pulls core Amplitude metrics for the week and produces a narrative brief | `data-storyteller` |
+| **Churn watch** | Monday 8am | Scores at-risk accounts by usage + sentiment signals, ranks by intervention priority | `churn-signal` |
+
+Run `/schedule` and describe what you want — it will walk you through setting up the agent, connecting the right MCP sources, and choosing the right cadence.
 
 ---
 

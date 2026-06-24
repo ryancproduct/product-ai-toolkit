@@ -1,108 +1,61 @@
 ---
-description: Generate metrics dashboard summary
+description: Generate a product metrics summary using Amplitude data, with narrative framing and health indicators
 ---
 
-You are helping a product manager analyze and present product metrics.
+You are helping a product manager analyse and summarise product metrics.
 
 ## Task
 
-Create a metrics dashboard summary from available data sources or help set up metric tracking.
+Pull metrics from Amplitude (or available data sources) and produce a metrics brief with health indicators and narrative framing. For a richer "so what" narrative, delegate to the `data-storyteller` agent.
 
 ## Process
 
-1. **Identify Data Sources**: Look for analytics files, logs, database exports, or CSV files
-2. **Key Metrics**: Organize by category (Acquisition, Activation, Retention, Revenue, Referral)
-3. **Trends**: Calculate week-over-week or month-over-month changes
-4. **Insights**: Highlight what's working and what needs attention
+1. **Identify the scope**: Which product area, feature, or time period? If not specified, ask.
+2. **Pull data from Amplitude** using MCP tools:
+   - Core engagement: DAU/WAU/MAU for the relevant area
+   - Feature-specific events: adoption rate, completion rate, frequency
+   - Trend: this period vs prior period
+   - Segments if meaningful (plan tier, industry, user role)
+3. **Assess health**: For each metric, classify as 🟢 On Track / 🟡 Watch / 🔴 Critical against known targets or prior period trend.
+4. **Write the brief**.
 
-## Metrics Framework (AARRR Pirate Metrics)
-
-### Acquisition
-- New users/signups
-- Traffic sources
-- Landing page conversion rate
-
-### Activation
-- Onboarding completion rate
-- Time to first value
-- Feature adoption rate
-
-### Retention
-- Daily/Weekly/Monthly Active Users (DAU/WAU/MAU)
-- Churn rate
-- Cohort retention
-
-### Revenue
-- MRR/ARR
-- ARPU (Average Revenue Per User)
-- LTV (Lifetime Value)
-
-### Referral
-- Referral rate
-- Viral coefficient
-- NPS (Net Promoter Score)
+If Amplitude isn't connected, ask the user to paste their metrics data — you'll work with whatever format they provide.
 
 ## Output Format
 
 ```markdown
-## Product Metrics Dashboard - [Period]
+## Product Metrics — [Area] | [Period]
 
-### Executive Summary
-[2-3 sentences on overall health and key movements]
+### Summary
+[2-3 sentences: what's the overall picture right now?]
 
-### Key Performance Indicators
+### Key Metrics
 
-| Metric | Current | Previous | Change | Target | Status |
-|--------|---------|----------|--------|--------|--------|
-| MAU | [value] | [value] | [+/-%] | [goal] | 🟢/🟡/🔴 |
-| Activation Rate | [%] | [%] | [+/-%] | [%] | 🟢/🟡/🔴 |
-| Retention (D7) | [%] | [%] | [+/-%] | [%] | 🟢/🟡/🔴 |
-| MRR | [$] | [$] | [+/-%] | [$] | 🟢/🟡/🔴 |
+| Metric | This Period | Prior Period | Change | Status |
+|--------|-------------|--------------|--------|--------|
+| MAU | | | | 🟢/🟡/🔴 |
+| WAU | | | | 🟢/🟡/🔴 |
+| [Feature adoption] | | | | 🟢/🟡/🔴 |
+| [Retention] | | | | 🟢/🟡/🔴 |
 
-### Top Wins
-1. **[Metric]**: [What happened and why it matters]
-2. **[Metric]**: [What happened and why it matters]
+### What's Moving
 
-### Areas of Concern
-1. **[Metric]**: [What's declining and potential causes]
-2. **[Metric]**: [What's declining and potential causes]
+**Up ↑**
+- [Metric] is [+X%] — [brief explanation or hypothesis]
 
-### Deep Dive: [Focus Area]
-[Detailed analysis of one particular metric or trend]
+**Down ↓**
+- [Metric] is [-X%] — [brief explanation or hypothesis]
+
+**Watch**
+- [Metric] is flat but [context that makes this concerning or reassuring]
 
 ### Recommended Actions
-1. **[Action]**: Based on [metric/insight]
-2. **[Action]**: Based on [metric/insight]
-
-### Experiment Results
-| Experiment | Hypothesis | Result | Next Steps |
-|------------|------------|--------|------------|
-| [Name] | [What we thought] | [What happened] | [What to do] |
+1. [Action based on the data]
+2. [Action based on the data]
 ```
 
-## Analysis Tips
+## Tips
 
-- Use 🟢 (on track), 🟡 (needs attention), 🔴 (critical) status indicators
-- Always compare to previous period AND target
-- Look for correlations between metrics
-- Segment data when possible (by cohort, channel, plan type)
-- Note statistical significance
-- Link metrics to recent product changes
-
-## If No Data Available
-
-If you can't find data files, help the PM by:
-1. Recommending what metrics to track
-2. Suggesting data collection methods
-3. Creating a metrics tracking template
-4. Outlining an analytics implementation plan
-
-## Visualization Suggestions
-
-Recommend chart types for different metrics:
-- **Trends**: Line charts
-- **Comparisons**: Bar charts
-- **Composition**: Pie charts or stacked bars
-- **Distribution**: Histograms
-- **Correlation**: Scatter plots
-- **Funnels**: Funnel charts
+- Always compare to prior period AND to target/expected. A metric growing 5% sounds good until you know the target was 15%.
+- If a metric moved significantly (>10% either direction), try to correlate it with a product change or external event.
+- For a full narrative story with "so what" framing and exec-ready output, run `/data-storyteller` instead of or after this summary.

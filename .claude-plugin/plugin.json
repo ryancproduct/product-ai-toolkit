@@ -1,7 +1,7 @@
 {
   "name": "ai-pm-kit",
-  "description": "15 PM commands, 19 skills, and 5 specialist agents — turning Claude Code into a PM superpower",
-  "version": "1.0.0",
+  "description": "19 PM commands, 23 skills, and 8 specialist agents — turning Claude Code into a PM superpower",
+  "version": "1.2.0",
   "author": {
     "name": "Ryan Clement"
   },

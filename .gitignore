@@ -6,3 +6,4 @@
 __pycache__/
 *.pyc
 config/installed_plugins.json
+skills/*.zip
